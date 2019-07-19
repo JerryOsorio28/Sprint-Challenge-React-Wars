@@ -2,6 +2,7 @@
   text-align: center;
 }
 .Header {
+  font-size: 8rem;
   text-shadow: 1px 4px 5px  yellow;
 }
 /* write your parent styles in here for your App.js */

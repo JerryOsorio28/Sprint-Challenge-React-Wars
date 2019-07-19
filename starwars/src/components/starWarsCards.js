@@ -1,12 +1,20 @@
 import React from "react";
+// import styled from 'styled-components';
 
+export default function StarWarsCards  ({props}) {
+    
+    // const CardsStyles = styled.div`
+    //     border: 1px solid red;
+    //     width: 500px;
+    //     height: 500px;
+    
+    // `;
 
-const StarWarsCard = ({props}) => {
-  return (
-    <div>
-        {props}
-    </div>
-  );
-};
+    return (
+      <div className='Cards'>
+      {props}
+      </div>
+    );
+  };
 
-export default StarWarsCard;
+  

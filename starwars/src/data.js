@@ -6,14 +6,16 @@ export default function Data () {
     // Try to think through what state you'll need for this app before starting. Then build out
     // the state properties here.
     let [data, setData] = useState([])
+    
   
     useEffect(() => {
       axios
-      .get(`https://swapi.co/api/people/`)
+      .get(`https://henry-mock-swapi.herokuapp.com/api`)
       .then(object =>{
         data = object.data.results
         console.log(data)
         setData(data);
+
       })
       .catch(object =>{
         console.log('Ooops try again! :(')
@@ -25,8 +27,8 @@ export default function Data () {
     // sync up with, if any.
   
     return (
-        <div>
-            {data.map(object => <StarWarsCards data={object}/>)}
+        <div className = 'Container'>
+            {data.map(object => <StarWarsCards data ={object}/>)} 
         </div>
             
     );

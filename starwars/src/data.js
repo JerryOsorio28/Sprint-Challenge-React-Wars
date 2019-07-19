@@ -13,7 +13,7 @@ export default function Data () {
       .get(`https://henry-mock-swapi.herokuapp.com/api`)
       .then(object =>{
         data = object.data.results
-        console.log(data)
+        // console.log(data)
         setData(data);
 
       })

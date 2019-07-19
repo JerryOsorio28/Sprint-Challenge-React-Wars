@@ -5,9 +5,9 @@ export default function StarWarsCards (props) {
     
     const CardsStyles = styled.div`
         border: 1px solid black;
-        width: 70%;
-        margin-left: 15%;
-        margin-bottom: 5%;
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 1%;
     `;
     const NameStyles = styled.h1`
         border: 1px solid black;
@@ -16,12 +16,13 @@ export default function StarWarsCards (props) {
         padding: 3%;
         text-shadow: 5px 2px 5px black;
         color: yellow;
+        
     `;
     const AttributesStyles = styled.h5`
         border: 1px solid black;
         background-color: grey;
         margin: 0;
-        padding: 3%;
+        padding: 10% 3%;
         text-shadow: 1px 1px 5px black;
         color: white;
         text-align: right;
@@ -30,31 +31,29 @@ export default function StarWarsCards (props) {
 
     return (
       <CardsStyles>
-        <div className = 'person'>
             <NameStyles>
                 {props.data.name}
             </NameStyles>
             <AttributesStyles>
-                <div className='birth_year'>
+                <div>
                     Date of birth: {props.data.birth_year}
                 </div>
-                <div className='eye_color'>
+                <div>
                     Eye Color: {props.data.eye_color}
                 </div>
-                <div className='gender'>
+                <div>
                     Gender: {props.data.gender}
                 </div>
-                <div className='hair_color'>
+                <div>
                     Hair Color: {props.data.hair_color}
                 </div>
-                <div className='height'>
+                <div>
                     Height: {props.data.height}
                 </div>
-                <div className='skin_color'>
+                <div>
                     Skin Color {props.data.skin_color}
                 </div>
             </AttributesStyles>
-        </div>
       </CardsStyles>
     );
   };

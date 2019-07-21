@@ -4,29 +4,29 @@ import {CardsStyles, NameStyles, AttributesStyles} from './cardsStyle';
 export default function StarWarsCards (props) {
 
     return (
-      <CardsStyles>
+      <CardsStyles>       
             <NameStyles>
                 {props.data.name}
             </NameStyles>
             <AttributesStyles>
-                <div>
+                <p>
                     Date of birth: {props.data.birth_year}
-                </div>
-                <div>
+                </p>
+                <p>
                     Eye Color: {props.data.eye_color}
-                </div>
-                <div>
+                </p>
+                <p>
                     Gender: {props.data.gender}
-                </div>
-                <div>
+                </p>
+                <p>
                     Hair Color: {props.data.hair_color}
-                </div>
-                <div>
+                </p>
+                <p>
                     Height: {props.data.height}
-                </div>
-                <div>
+                </p>
+                <p>
                     Skin Color {props.data.skin_color}
-                </div>
+                </p>
             </AttributesStyles>
       </CardsStyles>
     );

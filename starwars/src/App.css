@@ -2,6 +2,9 @@
   text-align: center;
 }
 .Header {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: #808080;
   font-size: 8rem;
   text-shadow: 1px 4px 5px  yellow;
 }
